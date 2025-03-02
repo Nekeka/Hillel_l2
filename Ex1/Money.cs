@@ -26,8 +26,8 @@ namespace Ex1
         {
             Console.WriteLine($"Dollars: {Dollars}\nCents: {Cents}");
         }
-
-        public void SetMoney(int dollars, int cents)
+        
+        public void SetMoney(int dollars, int cents) //
         {
             if (dollars >= 0)
                 Dollars = dollars;
