@@ -24,9 +24,16 @@ namespace Ex1
             ProductName = name;
         }
 
-        public void ReducePrice()
+        public void ReducePrice(int cents_reduce, int dollars_reduce)
         {
+            int dollars = Dollars;
+            int cents = Cents;
 
+            dollars -= dollars_reduce;
+            cents -= cents_reduce;
+
+            SetMoney(dollars, cents);
+            
         }
 
     }
